@@ -1,0 +1,59 @@
+.main {
+  width: 100%;
+  padding: 36px 0;
+}
+
+.sectionNew {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sectionTitle {
+  align-self: self-start;
+}
+
+section {
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.artistAbout {
+  margin-top: 20px;
+  font-size: var(--fz-l);
+  font-weight: 300;
+
+  &Text {
+    -webkit-line-clamp: 4; /* Число отображаемых строк */
+    display: -webkit-box; /* Включаем флексбоксы */
+    -webkit-box-orient: vertical; /* Вертикальная ориентация */
+    overflow: hidden; /* Обрезаем всё за пределами блока */
+
+    transition: all 0.2s ease;
+
+    &-active {
+      -webkit-line-clamp: initial;
+    }
+  }
+
+  button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+
+    margin: 20px auto 0;
+
+    background: none;
+    border: none;
+
+    & .close {
+      transform: rotate(0);
+    }
+
+    & .open {
+      transform: rotate(180deg);
+    }
+  }
+}

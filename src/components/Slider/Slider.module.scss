@@ -1,0 +1,53 @@
+.slider {
+  width: 100%;
+}
+
+.mySwiper {
+  width: 100%;
+  padding: 0 7%;
+}
+
+.sliderTop {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 7%;
+
+  margin-bottom: 20px;
+
+  &Title {
+    font-size: var(--fz-xl);
+  }
+}
+
+.sliderTopBtn {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+
+  button {
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border: none;
+
+    &.navigationDisabled {
+      opacity: 0.2;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.sliderPrevBtn {
+  img {
+    transform: rotate(180deg);
+  }
+}
+
+.swipeSlide {
+  width: max-content;
+}
