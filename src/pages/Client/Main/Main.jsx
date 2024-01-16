@@ -5,11 +5,13 @@ import Album from "components/Album/Album";
 import Slider from "components/Slider/Slider";
 import Container from "components/ui/container/container";
 import Video from "components/Video/Video";
+import ConcertList from "components/ConcertList/ConcertList";
 
 import arrowDown from "assets/arrow-down.svg";
 
 // import ms from 'styles/main.module.scss';
 import cs from "./Main.module.scss";
+import Footer from "../../../components/Footer/Footer";
 
 const cx = classNames.bind(cs);
 
@@ -65,8 +67,15 @@ const Main = () => {
       <Container full marginTB>
         <Slider video />
       </Container>
+      <Container full marginTB bgColor>
+        <ConcertList />
+        <br />
+        <button className={cx("concertListBtn")}>
+          <p>ВСЕ КОНЦЕРТЫ</p>
+        </button>
+      </Container>
 
-      <section>second</section>
+      <Footer />
     </main>
   );
 };

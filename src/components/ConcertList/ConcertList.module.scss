@@ -1,0 +1,48 @@
+.concertList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  ul {
+    list-style: none;
+    width: 100%;
+  }
+}
+
+.concertListItem {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 10px 12px;
+  background: white;
+}
+
+.concertListItem:nth-child(odd) {
+  background: var(--primary-bg-color);
+}
+
+.concertListDate {
+  width: 10%;
+  display: flex;
+  flex-direction: column;
+}
+
+.concertListDate p {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.concertListDate span {
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 12px;
+  text-transform: uppercase;
+}
+
+.concertListItemInfo {
+  width: 45%;
+  text-align: center;
+  font-size: 12px;
+  line-height: 14px;
+}

@@ -18,7 +18,7 @@ const Slider = ({ video }) => {
   const nextEl = useRef(null);
   const prevEl = useRef(null);
 
-  const sliderElems = Array(9);
+  const sliderElems = Array(5);
   if (video) {
     sliderElems.fill(<Video size="medium" />);
   } else {

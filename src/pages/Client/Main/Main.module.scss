@@ -1,6 +1,7 @@
 .main {
   width: 100%;
-  padding: 36px 0;
+  padding: 36px 0 0;
+  position: relative;
 }
 
 .sectionNew {
@@ -14,7 +15,7 @@
 }
 
 section {
-  min-height: 100vh;
+  min-height: 50vh;
   overflow: hidden;
 }
 
@@ -56,4 +57,17 @@ section {
       transform: rotate(180deg);
     }
   }
+}
+// CONCERT LIST
+
+.concertListBtn {
+  margin: 15px auto 0;
+  width: 100%;
+  background: #fff;
+  padding: 20px 30px;
+  font-size: var(--fz-l);
+  font-weight: 700;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  border: none;
 }
