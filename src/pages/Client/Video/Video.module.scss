@@ -1,0 +1,93 @@
+.videoListHeader {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btnFilter {
+  background: none;
+  border: none;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 4px;
+  padding: 4px;
+
+  hr,
+  &::before,
+  &::after {
+    border: none;
+    content: "";
+    width: 66%;
+    height: 3px;
+    background-color: #000;
+    border-radius: 1.5px;
+
+    transition: all 0.4s ease;
+    width: 100%;
+  }
+
+  hr {
+    width: 66%;
+  }
+  &::before {
+    width: 33%;
+  }
+  &::after {
+    width: 100%;
+  }
+  &-active {
+    hr {
+      width: 66%;
+    }
+    &::before {
+      width: 100%;
+    }
+    &::after {
+      width: 33%;
+    }
+  }
+}
+
+.videoListAlbums {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.videoAlbumItem {
+  max-width: 45%;
+}
+
+.iconCenter {
+  margin: 25px auto 0;
+}
+
+.videoPageText {
+  color: #000;
+
+  font-family: Ubuntu;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+}
+
+.videoRelatedHeader {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+
+  p {
+    color: #000;
+
+    text-align: right;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 400;
+    text-decoration-line: underline;
+  }
+}

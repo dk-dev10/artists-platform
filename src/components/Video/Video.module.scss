@@ -1,5 +1,4 @@
 .cpVideo {
-  margin: 0 auto;
 
   h4 {
     font-size: var(--fz-l);
@@ -18,15 +17,15 @@
 
     .videoPlayBtn {
       max-width: 64px;
-      max-height: 64px;
+      // max-height: 64px;
     }
   }
   &-medium {
     max-width: 200px;
 
-    img {
-      max-height: 112px;
-    }
+    // img {
+    //   max-height: 112px;
+    // }
 
     .videoPlayBtn {
       max-width: 44px;
@@ -37,9 +36,9 @@
   &-small {
     max-width: 130px;
 
-    img {
-      max-height: 73px;
-    }
+    // img {
+    //   max-height: 73px;
+    // }
 
     .videoPlayBtn {
       max-width: 28px;

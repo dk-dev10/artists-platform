@@ -1,0 +1,27 @@
+.contactItem {
+  margin-top: 20px;
+
+  display: flex;
+  gap: 5%;
+  font-size: var(--fz-m);
+
+  .contactProfession,
+  .contactInformation {
+    width: 45%;
+    text-align: left;
+    font-family: Montserrat;
+
+    & > * {
+      font-family: Montserrat;
+      margin-bottom: 10px;
+    }
+  }
+
+  .contactProfession {
+    font-weight: 400;
+  }
+
+  .contactInformationName {
+    font-weight: 700;
+  }
+}

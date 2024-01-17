@@ -1,5 +1,5 @@
 import classNames from "classnames/bind";
-import cn from "./ConcertList.module.scss";
+import cn from "./ConcertListTable.module.scss";
 
 const cx = classNames.bind(cn);
 
