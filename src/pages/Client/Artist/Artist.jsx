@@ -5,7 +5,7 @@ import Album from "components/Album/Album";
 import Slider from "components/Slider/Slider";
 import Container from "components/ui/container/container";
 import Video from "components/Video/Video";
-import ConcertList from "components/ConcertList/ConcertList";
+import ConcertListTable from "components/ConcertListTable/ConcertListTable";
 
 import arrowDown from "assets/arrow-down.svg";
 
@@ -64,7 +64,7 @@ const Artist = () => {
         <Slider video />
       </Container>
       <Container full marginTB bgColor>
-        <ConcertList />
+        <ConcertListTable />
         <br />
         <button className={cx("concertListBtn")}>
           <p>ВСЕ КОНЦЕРТЫ</p>

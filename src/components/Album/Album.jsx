@@ -7,13 +7,19 @@ import zivert from "../../assets/album.jpg";
 const cx = classNames.bind(cs);
 
 // eslint-disable-next-line react/prop-types
-const Album = ({ size, classname }) => {
+const Album = ({
+  size,
+  classname,
+  img = zivert,
+  title = "Многоточия",
+  subtitle = "Сингл, 2020",
+}) => {
   return (
     <div className={cx("cpAlbum", `cpAlbum-${size || "large"}`, classname)}>
-      <img src={zivert} alt="album picture" />
+      <img src={img} alt="album picture" />
       <div className={cx("albumInfo")}>
-        <h4>Многоточия</h4>
-        <p>Сингл, 2020</p>
+        <h4>{title}</h4>
+        {subtitle && <p>{subtitle}</p>}
       </div>
     </div>
   );
